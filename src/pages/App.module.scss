@@ -1,0 +1,10 @@
+@import "../assets/styles/colors.module";
+@import "../assets/styles/typography.module";
+@import "../assets/styles/resetter.module";
+
+body{
+  background: $mainBg;
+}
+*, *:before, *:after{
+  @extend .defaultFont;
+}

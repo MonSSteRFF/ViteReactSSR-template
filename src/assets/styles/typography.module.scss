@@ -1,0 +1,53 @@
+@mixin font($fontFamily, $fontPath, $fontWeight, $fontStyle) {
+  @font-face {
+    font-family: $fontFamily;
+    src: url("../fonts/" + $fontPath + ".ttf") format("ttf");
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+  }
+}
+@mixin fontSize($fontSize, $lineHeight){
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@include font("Pnext", "Porsche Next TT.ttf", normal, normal);
+//@include font("Pnext", "Porsche Next TT Italic.ttf", normal, italic);
+//
+//@include font("Pnext", "Porsche Next TT Bold.ttf", bold, normal);
+//@include font("Pnext", "Porsche Next TT Bold Italic.ttf", bold, italic);
+//
+//@include font("Pnext", "Porsche Next TT Thin.ttf", lighter, normal);
+//@include font("Pnext", "Porsche Next TT Thin Italic.ttf", lighter, italic);
+//
+//@include font("Pnext", "Porsche Next TT Thin Bold.ttf", bolder, normal)
+//@include font("Pnext", "Porsche Next TT Thin Bold Italic.ttf", bolder, italic)
+
+.pnext_normal{
+  font-family: "Pnext", sans-serif;
+  font-weight: normal;
+  &_14_19{
+    @extend .pnext_normal;
+    @include fontSize(14px, 19px);
+  }
+  &_21_45{
+    @extend .pnext_normal;
+    @include fontSize(21px, 45px);
+  }
+  &_27_36{
+    @extend .pnext_normal;
+    @include fontSize(27px, 36px);
+  }
+  &_29_37{
+    @extend .pnext_normal;
+    @include fontSize(29px, 37px);
+  }
+}
+
+.defaultFont{
+  @extend .pnext_normal_14_19;
+}
+
+
+
+

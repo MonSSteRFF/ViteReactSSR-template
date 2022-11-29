@@ -1,0 +1,13 @@
+:root{
+  --mainBg: #191919;
+  --primBg: #454545;
+  --main: #FFFFFF;
+  --primary: #5A5A5A;
+  --brand: #FFD500;
+}
+
+$mainBg: var(--mainBg);
+$primBg: var(--primBg);
+$main: var(--main);
+$primary: var(--primary);
+$brand: var(--brand);
