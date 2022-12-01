@@ -5,9 +5,22 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  @extend .R_R_14_16;
+  text-align: left;
+  text-decoration: none;
+  color: $text;
+  @extend .r_r_14;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 body {
   background: $mainbg;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+main {
+  display: flex;
+  height: calc(100vh - 120px);
 }

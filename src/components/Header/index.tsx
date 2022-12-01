@@ -12,10 +12,12 @@ const Header = () => {
         <Link href={"/"} className={styles.header__logotype}>
           <img
             className={styles.header__logotype__image}
+            width="50px"
+            height="50px"
             src={logoIcon}
             alt=""
           />
-          <p className={styles.header__logotype__text}>{"TaskApi"}</p>
+          <p className={styles.header__logotype__text}>{"TaskerApi"}</p>
         </Link>
       </div>
     </header>

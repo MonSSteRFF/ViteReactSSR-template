@@ -24,19 +24,19 @@
 //@include font("Roboto", "Roboto-Thin.ttf", 100, normal);
 //@include font("Roboto", "Roboto-ThinItalic.ttf", 100, normal);
 
-.R_R {
+.r_r {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  &_14_16 {
-    @extend .R_R;
-    @include fontSize(14px, 16px);
+  &_14 {
+    @extend .r_r;
+    @include fontSize(14px);
   }
-  &_18_24 {
-    @extend .R_R;
-    @include fontSize(18px, 24px);
+  &_18 {
+    @extend .r_r;
+    @include fontSize(18px);
   }
   &_22 {
-    @extend .R_R;
+    @extend .r_r;
     @include fontSize(22px);
   }
 }

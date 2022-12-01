@@ -1,0 +1,15 @@
+@use "../../assets/styles/colors.module" as *;
+
+.aside {
+  width: 240px;
+  height: 100%;
+
+  padding: 20px;
+  &__wrapper {
+    background: $bg;
+    height: 100%;
+    width: 100%;
+    box-shadow: $boxShadow;
+    border-radius: $borderRadius;
+  }
+}

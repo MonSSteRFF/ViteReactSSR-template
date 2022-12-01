@@ -2,6 +2,13 @@
   --bg: #ffffff;
   --mainbg: #eaeef6;
 
+  --text: #121212;
+  --textPrim: #41475e;
+
+  --second: #f4f7fc;
+  --secondBg: #7784ee;
+  --secondText: #1778b0;
+
   --primary: #08a0f7;
   --primaryBg: #e1f2fc;
   --primaryText: #3387b7;
@@ -21,29 +28,40 @@
   --successText: #10673e;
 
   --boxShadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+  --boxShadowSecond: 0px 5px 15px rgba(119, 132, 238, 0.3);
+
   --borderRadius: 8px;
 }
 
 $bg: var(--bg);
 $mainbg: var(--mainbg);
 
-$prim: var(--primary);
-$primBg: var(--primaryBg);
-$primText: var(--primaryText);
+$text: var(--text);
+$textPrim: var(--textPrim);
 
-$wr: var(--wrong);
-$wrBg: var(--wrongBg);
-$wrText: var(--wrongText);
+$second: var(--second);
+$secondBg: var(--secondBg);
+$secondText: var(--secondText);
 
-$at: var(--attention);
-$atBg: var(--attentionBg);
-$atBorder: var(--attentionBorder);
-$atText: var(--attentionText);
+$primary: var(--primary);
+$primaryBg: var(--primaryBg);
+$primaryText: var(--primaryText);
 
-$suc: var(--success);
-$sucBg: var(--successBg);
-$sucBorder: var(--successBorder);
-$sucText: var(--successText);
+$wrong: var(--wrong);
+$wrongBg: var(--wrongBg);
+$wrongText: var(--wrongText);
 
-$bs: var(--boxShadow);
-$br: var(--borderRadius);
+$attention: var(--attention);
+$attentionBg: var(--attentionBg);
+$attentionBorder: var(--attentionBorder);
+$attentionText: var(--attentionText);
+
+$success: var(--success);
+$successBg: var(--successBg);
+$successBorder: var(--successBorder);
+$successText: var(--successText);
+
+$boxShadow: var(--boxShadow);
+$boxShadowSecond: var(--boxShadowSecond);
+
+$borderRadius: var(--borderRadius);

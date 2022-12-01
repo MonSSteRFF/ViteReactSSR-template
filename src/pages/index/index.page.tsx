@@ -12,9 +12,4 @@ function Page() {
   );
 }
 
-const documentProps = {
-  title: "main page",
-  description: "",
-};
-
-export { Page, documentProps };
+export { Page };

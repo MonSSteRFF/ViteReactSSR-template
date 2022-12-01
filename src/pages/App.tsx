@@ -1,5 +1,7 @@
 import React from "react";
+
 import { Header } from "../components/Header";
+import { Aside } from "../components/Aside";
 
 import "./App.module.scss";
 
@@ -7,7 +9,10 @@ const App = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Header />
-      {children}
+      <main>
+        <Aside />
+        {children}
+      </main>
     </>
   );
 };
