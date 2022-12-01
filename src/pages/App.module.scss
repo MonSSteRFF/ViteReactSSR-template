@@ -1,10 +1,13 @@
-@import "../assets/styles/colors.module";
-@import "../assets/styles/typography.module";
-@import "../assets/styles/resetter.module";
+@use "../assets/styles/colors.module" as *;
+@use "../assets/styles/typography.module" as *;
 
-body{
-  background: $mainBg;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  @extend .R_R_14_16;
 }
-*, *:before, *:after{
-  @extend .defaultFont;
+
+body {
+  background: $mainbg;
 }

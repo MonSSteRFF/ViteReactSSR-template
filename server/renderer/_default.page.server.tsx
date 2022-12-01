@@ -4,7 +4,9 @@ import { PageShell } from "./PageShell";
 import { escapeInject, dangerouslySkipEscape } from "vite-plugin-ssr";
 
 import type { PageContextServer } from "./types";
+
 import favicon from "../../favicon.svg";
+import defaultMeta from "../../defaultMeta.module.json";
 
 async function render(pageContext: PageContextServer) {
   const { Page, pageProps } = pageContext;
@@ -16,11 +18,27 @@ async function render(pageContext: PageContextServer) {
 
   // See https://vite-plugin-ssr.com/head
   const { documentProps } = pageContext.exports;
-  const title = (documentProps && documentProps.title) || "Vite SSR app";
+
+  const title =
+    documentProps !== undefined && documentProps.title !== undefined
+      ? documentProps.title
+      : defaultMeta !== undefined
+      ? defaultMeta.title
+      : "SSR React Vite app";
+
   const desc =
-    (documentProps && documentProps.description) ||
-    "App using Vite + vite-plugin-ssr";
-  const faviconImage = (documentProps && documentProps.favicon) || favicon;
+    documentProps !== undefined && documentProps.description !== undefined
+      ? documentProps.description
+      : defaultMeta !== undefined
+      ? defaultMeta.description
+      : "App using Vite + vite-plugin-ssr";
+
+  const faviconImage =
+    documentProps !== undefined && documentProps.favicon !== undefined
+      ? documentProps.favicon
+      : favicon !== undefined
+      ? favicon
+      : "";
 
   const documentHtml = escapeInject`<!DOCTYPE html>
     <html lang="en">

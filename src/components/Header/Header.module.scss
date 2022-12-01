@@ -1,5 +1,25 @@
-@import "../../assets/styles/colors.module";
+@use "../../assets/styles/colors.module" as *;
 
-.header{
-  background: $primBg;
+.header {
+  padding: 20px;
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: $br;
+    box-shadow: $bs;
+    background: $bg;
+    padding: 15px;
+  }
+
+  &__logotype {
+    display: flex;
+    align-items: center;
+    &__image {
+    }
+    &__text {
+    }
+  }
 }

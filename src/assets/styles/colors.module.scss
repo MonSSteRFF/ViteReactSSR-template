@@ -1,13 +1,49 @@
-:root{
-  --mainBg: #191919;
-  --primBg: #454545;
-  --main: #FFFFFF;
-  --primary: #5A5A5A;
-  --brand: #FFD500;
+:root {
+  --bg: #ffffff;
+  --mainbg: #eaeef6;
+
+  --primary: #08a0f7;
+  --primaryBg: #e1f2fc;
+  --primaryText: #3387b7;
+
+  --wrong: #f85640;
+  --wrongBg: #fff8f8;
+  --wrongText: #79170a;
+
+  --attention: #e18109;
+  --attentionBg: #fff8ef;
+  --attentionBorder: #fba63c;
+  --attentionText: #bc741a;
+
+  --success: #13854e;
+  --successBg: #dcf3eb;
+  --successBorder: #34a770;
+  --successText: #10673e;
+
+  --boxShadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
+  --borderRadius: 8px;
 }
 
-$mainBg: var(--mainBg);
-$primBg: var(--primBg);
-$main: var(--main);
-$primary: var(--primary);
-$brand: var(--brand);
+$bg: var(--bg);
+$mainbg: var(--mainbg);
+
+$prim: var(--primary);
+$primBg: var(--primaryBg);
+$primText: var(--primaryText);
+
+$wr: var(--wrong);
+$wrBg: var(--wrongBg);
+$wrText: var(--wrongText);
+
+$at: var(--attention);
+$atBg: var(--attentionBg);
+$atBorder: var(--attentionBorder);
+$atText: var(--attentionText);
+
+$suc: var(--success);
+$sucBg: var(--successBg);
+$sucBorder: var(--successBorder);
+$sucText: var(--successText);
+
+$bs: var(--boxShadow);
+$br: var(--borderRadius);

@@ -13,8 +13,8 @@ function Page() {
 }
 
 const documentProps = {
-  title: "About SpaceX !!!",
-  description: "Our mission is to explore the galaxy.",
+  title: "main page",
+  description: "",
 };
 
-export { Page };
+export { Page, documentProps };

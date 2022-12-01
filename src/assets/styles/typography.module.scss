@@ -6,48 +6,37 @@
     font-style: $fontStyle;
   }
 }
-@mixin fontSize($fontSize, $lineHeight){
+@mixin fontSize($fontSize, $lineHeight: 140%) {
   font-size: $fontSize;
   line-height: $lineHeight;
 }
 
-@include font("Pnext", "Porsche Next TT.ttf", normal, normal);
-//@include font("Pnext", "Porsche Next TT Italic.ttf", normal, italic);
-//
-//@include font("Pnext", "Porsche Next TT Bold.ttf", bold, normal);
-//@include font("Pnext", "Porsche Next TT Bold Italic.ttf", bold, italic);
-//
-//@include font("Pnext", "Porsche Next TT Thin.ttf", lighter, normal);
-//@include font("Pnext", "Porsche Next TT Thin Italic.ttf", lighter, italic);
-//
-//@include font("Pnext", "Porsche Next TT Thin Bold.ttf", bolder, normal)
-//@include font("Pnext", "Porsche Next TT Thin Bold Italic.ttf", bolder, italic)
+//@include font("Roboto", "Roboto-Black.ttf", 900, normal);
+//@include font("Roboto", "Roboto-BlackItalic.ttf", 900, normal);
+//@include font("Roboto", "Roboto-Bold.ttf", 700, normal);
+//@include font("Roboto", "Roboto-BoldItalic.ttf", 700, normal);
+@include font("Roboto", "Roboto-Medium.ttf", 500, normal);
+//@include font("Roboto", "Roboto-MediumItalic.ttf", 500, normal);
+//@include font("Roboto", "Roboto-Regular.ttf", 400, normal);
+//@include font("Roboto", "Roboto-Italic.ttf", 400, normal);
+//@include font("Roboto", "Roboto-Light.ttf", 300, normal);
+//@include font("Roboto", "Roboto-LightItalic.ttf", 300, normal);
+//@include font("Roboto", "Roboto-Thin.ttf", 100, normal);
+//@include font("Roboto", "Roboto-ThinItalic.ttf", 100, normal);
 
-.pnext_normal{
-  font-family: "Pnext", sans-serif;
+.R_R {
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
-  &_14_19{
-    @extend .pnext_normal;
-    @include fontSize(14px, 19px);
+  &_14_16 {
+    @extend .R_R;
+    @include fontSize(14px, 16px);
   }
-  &_21_45{
-    @extend .pnext_normal;
-    @include fontSize(21px, 45px);
+  &_18_24 {
+    @extend .R_R;
+    @include fontSize(18px, 24px);
   }
-  &_27_36{
-    @extend .pnext_normal;
-    @include fontSize(27px, 36px);
-  }
-  &_29_37{
-    @extend .pnext_normal;
-    @include fontSize(29px, 37px);
+  &_22 {
+    @extend .R_R;
+    @include fontSize(22px);
   }
 }
-
-.defaultFont{
-  @extend .pnext_normal_14_19;
-}
-
-
-
-
